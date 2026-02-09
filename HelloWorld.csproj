@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53A31F73-4C09-4C9F-872C-CC6CD4DA9FF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HelloWorld</RootNamespace>
+    <AssemblyName>HelloWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmOK.Designer.cs">
+      <DependentUpon>frmOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmDirectorLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmDirectorLab1.Designer.cs">
+      <DependentUpon>frmDirectorLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmHelloWorld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmHelloWorld.Designer.cs">
+      <DependentUpon>frmHelloWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmMainLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmMainLab1.Designer.cs">
+      <DependentUpon>frmMainLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmWriterLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmWriterLab1.Designer.cs">
+      <DependentUpon>frmWriterLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №2\frmMainLab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №2\frmMainLab2.Designer.cs">
+      <DependentUpon>frmMainLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №2\frmSlaveDimaLab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №2\frmSlaveDimaLab2.Designer.cs">
+      <DependentUpon>frmSlaveDimaLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №2\frmSlaveRomaLab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №2\frmSlaveRomaLab2.Designer.cs">
+      <DependentUpon>frmSlaveRomaLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №2\frmWriterLab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №2\frmWriterLab2.Designer.cs">
+      <DependentUpon>frmWriterLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmDmitryLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmDmitryLab3.Designer.cs">
+      <DependentUpon>frmDmitryLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmBaseLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmBaseLab3.Designer.cs">
+      <DependentUpon>frmBaseLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmRomanLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmRomanLab3.Designer.cs">
+      <DependentUpon>frmRomanLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmMaksimLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmMaksimLab3.Designer.cs">
+      <DependentUpon>frmMaksimLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmMainLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmMainLab3.Designer.cs">
+      <DependentUpon>frmMainLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №3\frmKostyaLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №3\frmKostyaLab3.Designer.cs">
+      <DependentUpon>frmKostyaLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №4\frmMainLab4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №4\frmMainLab4.Designer.cs">
+      <DependentUpon>frmMainLab4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmMaximLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmMaximLab1.Designer.cs">
+      <DependentUpon>frmMaximLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="лабораторная №1\frmSlaveLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №1\frmSlaveLab1.Designer.cs">
+      <DependentUpon>frmSlaveLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="лабораторная №2\frmRastrAlgoritm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="лабораторная №2\frmRastrAlgoritm.Designer.cs">
+      <DependentUpon>frmRastrAlgoritm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMain.resx" />
+    <EmbeddedResource Include="лабораторная №1\frmOK.resx">
+      <DependentUpon>frmOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmDirectorLab1.resx">
+      <DependentUpon>frmDirectorLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmHelloWorld.resx">
+      <DependentUpon>frmHelloWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmMainLab1.resx">
+      <DependentUpon>frmMainLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmWriterLab1.resx">
+      <DependentUpon>frmWriterLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №2\frmMainLab2.resx">
+      <DependentUpon>frmMainLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №2\frmSlaveDimaLab2.resx">
+      <DependentUpon>frmSlaveDimaLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №2\frmSlaveRomaLab2.resx">
+      <DependentUpon>frmSlaveRomaLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №2\frmWriterLab2.resx">
+      <DependentUpon>frmWriterLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmDmitryLab3.resx">
+      <DependentUpon>frmDmitryLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmBaseLab3.resx">
+      <DependentUpon>frmBaseLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmRomanLab3.resx">
+      <DependentUpon>frmRomanLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmMaksimLab3.resx">
+      <DependentUpon>frmMaksimLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmMainLab3.resx">
+      <DependentUpon>frmMainLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №3\frmKostyaLab3.resx">
+      <DependentUpon>frmKostyaLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №4\frmMainLab4.resx">
+      <DependentUpon>frmMainLab4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmMaximLab1.resx">
+      <DependentUpon>frmMaximLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="лабораторная №1\frmSlaveLab1.resx">
+      <DependentUpon>frmSlaveLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="лабораторная №2\frmRastrAlgoritm.resx">
+      <DependentUpon>frmRastrAlgoritm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
